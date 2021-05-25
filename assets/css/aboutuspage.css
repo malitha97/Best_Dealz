@@ -1,0 +1,424 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    text-shadow: none;
+}
+
+body {
+    margin: -20px 0 0 0;
+    padding: 0;
+}
+.dropdown {
+
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    padding-bottom: 0px;
+
+}
+.dropdown form{
+    width: 662px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.dropdown form select{
+    width: 662px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #646266;
+    outline: none;
+    background-color: white;
+    display: inline-block;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.dropdown form select {
+    background-image:
+            linear-gradient(45deg, transparent 50%, gray 50%),
+            linear-gradient(135deg, gray 50%, transparent 50%),
+            linear-gradient(to right, #ccc, #ccc);
+    background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            calc(100% - 2.5em) 0.5em;
+    background-size:
+            5px 5px,
+            5px 5px,
+            1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+
+.dropdown form select option{
+    width: 662px;
+
+}
+#googleMap{
+    width: 693px;
+    height:400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    border: solid 2px #707070;
+}
+#map-page {
+    width: max-content;
+    height: 250px;
+    margin-right: auto;
+    margin-left: 140px;
+    background-color: #f8cf1c;
+    margin-top: 1200px;
+    margin-bottom: 500px;
+
+}
+
+#map-canvas{
+    width: 450px;
+    height: 250px;
+}
+
+
+
+.body-container {
+    width: 100%;
+    background-color: #fafafa;
+    margin-top: 105px;
+}
+
+.body-title {
+    padding-top: 0;
+    padding-bottom: 40px;
+    margin-bottom: -10px;
+    color: #281e22;
+    font-size: 30px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.main-container{
+    width: 90%;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", serif;
+    margin-top: -30px;
+    padding: 8px;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+.main-container .who-are-we{
+    text-align: justify;
+    margin-top: -15px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #8C8989;
+}
+.main-container .who-are-we h3{
+    size: 13px;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+    margin-bottom: 0;
+}
+.main-container .who-are-we p{
+    font-size: 13px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    margin-top: 8px;
+}
+.main-container .our_promise{
+    text-align: justify;
+    margin-top: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #8C8989;
+}
+.main-container .our_promise h3{
+    size: 18px;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+    margin-bottom: 8px;
+}
+.main-container .our_promise p{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    margin-top: 0;
+}
+.main-container .video-container{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main-container .our_promise{
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #707070;
+
+}
+.main-container .our-success{
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.main-container .our-success h3{
+    size: 18px;
+    font-family: "Roboto", serif;
+    font-weight: bold;
+    color: #8C8989;
+}
+
+.main-container .our-success .success-section {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-container .our-success .success-section .success{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    color: #646266;
+
+}
+.main-container .our-success .success-section .success h1,h2,h4{
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.main-container .our-success .success-section .success h1{
+    font-weight: bolder;
+
+}
+.main-container .our-success .success-section .success .mt h1{
+    font-weight: bolder;
+    size: 35px;
+
+}
+.main-container .our-success .success-section .success_two{
+    text-align: center;
+
+}
+.main-container .our-success .success-section .success_two .scs{
+    margin-top: 70px;
+    margin-bottom: auto;
+    font-family: "Roboto", serif;
+
+}
+.main-container .our-success .success-section .success_two .scs h2{
+    text-align: center;
+    margin-top: 30px;
+    size: 25px;
+    color: #646266;
+}
+.main-container .our-success .success-section .success_two .scs h3{
+    text-align: center;
+    margin-top: 3px;
+    size: 20px;
+    color: #B93F3F;
+}
+
+.main-container .our-success .find-us .dropdown{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#googleMap{
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-container .video-container{
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+    video{
+        width: 75%;
+        height: auto;
+    }
+    .dropdown form select option{
+        width: 300px;
+
+    }
+
+}
+
+@media only screen and (device-width: 1024px) {
+    .body-container {
+        width: 100%;
+        background-color: #fafafa;
+        margin-top: 65px;
+    }
+}
+
+@media only screen and (device-width: 768px) {
+    .body-container {
+        width: 100%;
+        background-color: #fafafa;
+        margin-top: 65px;
+    }
+
+    video{
+        width: 75%;
+        height: auto;
+    }
+    .main-container .our-success .find-us {
+        width: 475px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .dropdown form{
+        width: 470px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .dropdown form select{
+        width: 470px;
+        height: 45px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .dropdown form select option{
+        width: 470px;
+
+    }
+    #googleMap{
+        width:470px;
+        height:287px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+@media only screen and (max-width : 668px) {
+
+}
+
+@media only screen and (device-width : 667px) {
+    .body-container {
+        width: 100%;
+        background-color: #fafafa;
+        margin-top: 65px;
+    }
+
+    .select-all-container {
+        width: 73.25% !important;
+    }
+    .main-container .our-success .find-us {
+        width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .dropdown form{
+        width: 385px;
+
+    }
+    .dropdown form select{
+        width: 100%;
+        height: 45px;
+
+    }
+    .dropdown form select option{
+        width: 385px;
+
+    }
+    #googleMap{
+        width:390px;
+        height:250px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@media only screen and (max-width: 648px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (max-width: 420px) {
+
+}
+
+@media only screen and (device-width: 375px) {
+    video{
+        width: 100%;
+        height: auto;
+    }
+    .main-container .our-success .success-section {
+        display: block;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 15px;
+    }
+    .main-container .our-success .find-us {
+        width: 319px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .dropdown form{
+        width: 313px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .dropdown form select{
+        width: 100%;
+        height: 45px;
+
+    }
+
+    .dropdown form select option{
+        width: 339px;
+
+    }
+    #googleMap{
+        width:313px;
+        height:200px;
+
+    }
+}

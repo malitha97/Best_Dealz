@@ -1,0 +1,76 @@
+.accounts-popup {
+    width: 140px;
+    height: 90px;
+    top: 40px;
+    right: 10px;
+    z-index: 600;
+    position: fixed;
+    display: none;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.accounts-popup-before-login {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.accounts-popup-after-login {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.fa-sign-in {
+    font-size: 20px;
+    color: #000000;
+}
+
+.fa-sign-out-alt {
+    font-size: 20px;
+    color: #000000;
+}
+
+.fa-sign-out {
+    font-size: 20px;
+    color: #000000;
+}
+
+.my-account-option .fa-user-circle {
+    font-size: 20px;
+    color: #000000;
+}
+
+.register-option, .logout-option{
+    height: 42px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+    border-top: 2px solid rgba(0, 0, 0, .3);
+}
+
+.login-option, .my-account-option {
+    height: 42px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.login-option p, .register-option p, .logout-option p, .my-account-option p{
+    text-align: left;
+}
+
+
+
+

@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    text-shadow: none;
+}
+
+body {
+    margin: -20px 0 0 0;
+    padding: 0;
+}
+
+.body-container {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.result-img {
+    margin-top: 20px;
+}
+
+.result-container {
+    margin: 0 auto;
+    width: 70%;
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    column-gap: 20px;
+}
+
+.results-details-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.body-title {
+    padding-top: 25px;
+    padding-bottom: 0;
+    margin-bottom: -10px;
+    color: #281e22;
+    font-size: 30px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.body-sub-title {
+    padding-bottom: 0;
+    color: #000000;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.result-logo {
+    margin-bottom: 15px;
+}
+
+.result-score {
+    font-size: 24px;
+    color: #7f187f;
+}
+
+.results-text, .results-store-credits {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 5px 10px;
+}
+
+.results-store-credits {
+    font-size: 17px;
+}
+
+.result-next-btn {
+    display: block;
+    margin: 20px auto 10px;
+    width: 300px !important;
+    height: 38px !important;
+    line-height: 35px !important;
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    font-size: 14px !important;
+}
+
+.result-empty {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #8c8989;
+    letter-spacing: 1.2px;
+}
+
+.empty-icon {
+    font-family: "FontAwesome", serif;
+    font-size: 72px;
+    color: #8c8989;
+    margin-top: -30px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .result-container {
+        width: 75%;
+    }
+
+    .result-img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .result-container {
+        width: 90%;
+    }
+
+    .result-img {
+        width: 350px;
+        height: 375px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .result-container {
+        width: 95%;
+        column-gap: 15px;
+    }
+
+    .result-img {
+        width: 275px;
+        height: 325px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .result-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .results-text {
+        padding: 0;
+        font-size: 19px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

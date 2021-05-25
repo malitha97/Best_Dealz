@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "question_description": "How many Best Dealz stores are available in Sri Lanka?",
+      "question_choice": ["1","3","5"],
+      "question_answer": "5"
+    },
+    {
+      "question_description": "In which year was Best Dealz introduced?",
+      "question_choice": ["2010","2014","2017"],
+      "question_answer": "2017"
+    },
+    {
+      "question_description": "Which area does Best Dealz focus on?",
+      "question_choice": ["Furniture","Mobiles","Laptops"],
+      "question_answer": "Furniture"
+    },
+    {
+      "question_description": "Where is the headquarters of Best Dealz located at?",
+      "question_choice": ["Colombia","Sri Lanka","Russia"],
+      "question_answer": "Sri Lanka"
+    },
+    {
+      "question_description": "What is Best Dealz is most commonly known for?",
+      "question_choice": ["Deals","Customer Satisfaction","High Pricing"],
+      "question_answer": "Customer Satisfaction"
+    }
+  ]
+}

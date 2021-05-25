@@ -1,0 +1,133 @@
+/* HIDE RADIO */
+.outer-div-feedback-pop [type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+.outer-div-feedback-pop [type=radio] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.outer-div-feedback-pop [type=radio]:checked + img {
+    outline: 2px solid #D57DEA;
+}
+.outer-div-feedback-pop{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    width: 75%;
+    margin-top: 2%;
+}
+.outer-div-feedback-pop div{
+    /*border: 5px outset blue;*/
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.outer-most-grid-div {
+    /*border: 5px outset blue;*/
+    /*width: 50%;*/
+}
+.center img {
+    width: 70%;
+    height: 40px
+}
+.center label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conditions-modal {
+    /*display: none;*/
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 200;
+}
+
+.conditions-modal-container {
+    /*border: 5px outset blue;*/
+    /*margin-top: 30px;*/
+    width: 500px;
+    height: 155px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.conditions-modal-container .error-alert-banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    grid-template-columns: 10fr 1fr;
+    column-gap: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 50px;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #cc0000;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+
+.error-alert-banner i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.conditions-modal-container .close-modal {
+    position: absolute;
+    top: -5px;
+    right: 8px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.rating-description{
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width : 668px) {
+    .conditions-modal-container {
+        width: 335px;
+        height: 182px;
+    }
+
+    .rating-description{
+        box-sizing: border-box;
+        padding: 3%;
+    }
+
+}
+

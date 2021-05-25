@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "user_id": "1000",
+      "saved_score": "10"
+    },
+    {
+      "user_id": "1001",
+      "saved_score": "30"
+    },
+    {
+      "user_id": "1002",
+      "saved_score": "50"
+    },
+    {
+      "user_id": "1003",
+      "saved_score": "20"
+    },
+    {
+      "user_id": "1004",
+      "saved_score": "30"
+    },
+    {
+      "user_id": "1005",
+      "saved_score": "15"
+    }
+  ]
+}

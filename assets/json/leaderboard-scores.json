@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "username": "malitha97wijewardhane@gmail.com",
+      "user_id": "1000",
+      "name": "Christian Bale",
+      "high_score": 4,
+      "image": "assets/images/leader-board-images/christian_bale.jpg"
+    },
+    {
+      "username": "n.peiris97@gmail.com",
+      "user_id": "1001",
+      "name": "Heath Ledger",
+      "high_score": 4,
+      "image": "assets/images/leader-board-images/heath_ledger.jpg"
+    },
+    {
+      "username": "ellen_yin@gmail.com",
+      "user_id": "1002",
+      "name": "Ellen Yin",
+      "high_score": 6,
+      "image": "assets/images/leader-board-images/ellen_yin.jpg"
+    },
+    {
+      "username": "ron_dean@gmail.com",
+      "user_id": "1003",
+      "name": "Ron Dean",
+      "high_score": 2,
+      "image": "assets/images/leader-board-images/leaderboard-portait.jpg"
+    },
+    {
+      "username": "francis_grey@gmail.com",
+      "user_id": "1004",
+      "name": "Francis Grey",
+      "high_score": 10,
+      "image": "assets/images/leader-board-images/leaderboard-portait.jpg"
+    },
+    {
+      "username": "harley_quinn@gmail.com",
+      "user_id": "1005",
+      "name": "Harley Quinn",
+      "high_score": 7,
+      "image": "assets/images/leader-board-images/margot_robbie.jpg"
+    }
+  ]
+}

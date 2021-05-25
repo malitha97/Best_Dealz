@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Best Dealz - Payment Gateway</title>
+
+    <!-- External stylesheets-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Internal stylesheets -->
+    <link rel="stylesheet" href="assets/css/stripe.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+
+    <!-- External scripts and util scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="application/javascript" src="assets/js/utils.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <!-- Stripe JS -->
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div class="payment-form-container">
+        <div class="payment-form-header">
+            <div class="logo-container">
+                <img class="site-logo" src="https://i.ibb.co/dbyrvnh/logo-light.png" width="144" height="66">
+            </div>
+            <h2>Stripe.com</h2>
+            <h3>Best Dealz</h3>
+        </div>
+
+        <div class="payment-form-fields">
+            <div id="payment-form">
+                <div class="form-row email-row">
+                    <label for="user-email">Email Address</label>
+                    <input class="form-field" type="email" name="user-email" id="user-email" placeholder="Email">
+                </div>
+
+                <div class="form-row">
+                    <label for="card-number">Card Number *</label>
+                    <div id="card-number"></div>
+                </div>
+
+                <div class="form-row float-row">
+                    <div class="card-expiration-container">
+                        <label for="card-expiration">Expiry Date *</label>
+                        <div id="card-expiration"></div>
+                    </div>
+
+                    <div class="card-cvv-container">
+                        <label for="card-cvv">CVC *</label>
+                        <div id="card-cvv"></div>
+                    </div>
+                </div>
+
+                <div class="payment-loader-parent">
+                    <div class="payment-loader"></div>
+                </div>
+                <div class="form-errors">&nbsp;</div>
+                <button class="primary-button-filled pay-btn">Pay</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/javascript" src="assets/js/stripe.js"></script>
+    <script type="application/javascript" src="assets/js/email.js"></script>
+</body>
+</html>

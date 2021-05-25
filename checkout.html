@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Best Dealz - Checkout</title>
+
+    <!-- External stylesheets-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Internal stylesheets -->
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/alerts.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sidemenu.css">
+    <link rel="stylesheet" href="assets/css/accounts_popup.css">
+    <link rel="stylesheet" href="assets/css/qrscanner.css">
+
+    <!-- External scripts and util scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="application/javascript" src="assets/js/utils.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- External Script for the qr scanner -->
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+</head>
+<body>
+    <!-- side bar menu -->
+    <div class="side-bar-menu-modal">
+        <div class="side-bar-menu-container">
+            <div class="side-menu-cancel">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="side-menu-logo">
+                <span class="logo-circle">
+                    <img src="assets/images/logos/small_white_abstract.png" >
+                </span>
+            </div>
+            <div class="side-menu-links">
+                <a href="homepage.html">Home</a>
+                <a href="promotions.html">Promotions</a>
+                <a href="gamification-landing.html">Game</a>
+                <a href="aboutuspage.html">About Us</a>
+            </div>
+            <div class="side-menu-footer">
+                <p>Copyright&#169; All Rights Reserved By Best Dealz</p>
+                <!-- Social links container -->
+                <div class="footer-social-sidemenu">
+                    <ul class="social-links-list-sidemenu">
+                        <li class="facebook"><a href="https://www.facebook.com/"><img class="facebook-sidemenu" src="./assets/images/social-media-icons/facebook_sidemenu.png" alt="Facebook"></a></li>
+                        <li class="twitter-sidemenu"><a href="https://twitter.com/"><img class="twitter-sidemenu" src="./assets/images/social-media-icons/twitter_sidemenu.png" alt="Twitter"></a></li>
+                        <li class="instagram-sidemenu"><a href="https://www.instagram.com/"><img class="instagram-sidemenu" src="./assets/images/social-media-icons/insta_sidemenu.png" alt="Instagram"></a></li>
+                        <li class="google-plus-sidemenu"><a href="https://myaccount.google.com/"><img class="google-plus-sidemenu" src="./assets/images/social-media-icons/google_sidemenu.png" alt="Google Plus"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pop-up window for user navigation -->
+    <div class="accounts-popup">
+        <div class="accounts-popup-before-login">
+            <div class="login-option">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <p>Log In</p>
+            </div>
+            <div class="register-option">
+                <i class="fa fa-user-plus"></i>
+                <p>Register</p>
+            </div>
+        </div>
+        <div class="accounts-popup-after-login">
+            <div class="my-account-option">
+                <i class="fa fa-user-circle"></i>
+                <p>My Account</p>
+            </div>
+            <div class="logout-option">
+                <i class="fa fa-sign-out"></i>
+                <p>Log Out</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- container for the qr scanner -->
+    <div class="qr-modal">
+        <div class="qr-container">
+            <div class="qr-window-cancel">
+                <i class="fa fa-close"></i>
+            </div>
+            <p class="qr-title">Scan the code</p>
+            <div class="scanner-window">
+                <div class="video-padding"></div>
+                <video id="preview"></video>
+                <div class="video-padding"></div>
+            </div>
+            <p id="scaning_status">Scanning</p>
+            <button class="primary-button-unfilled cancel-scan-btn">CANCEL SCANNING</button>
+            <button class="primary-button-unfilled scan-again-btn">SCAN AGAIN</button>
+        </div>
+    </div>
+
+    <!-- header of the page -->
+    <header>
+        <div class="header-container">
+            <div class="side-bar-logo-container">
+                <div class="side-bar-icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="logo-icon">
+                    <a href="homepage.html"><img src="assets/images/logos/small_white_abstract.png" width="63" height="35"></a>
+                </div>
+            </div>
+            <div class="navigation-text-ipad">
+                <div class="nav-promotions-ipad"><a href="promotions.html" style="color: black">Promotions</a> </div>
+                <div class="nav-game-ipad"><a href="gamification-landing.html" style="color: black">Game</a></div>
+                <div class="nav-about-ipad"><a href="aboutuspage.html" style="color: black">About Us</a></div>
+            </div>
+            <div class="navigation-icon-container">
+                <div class="accounts-icon">
+                    <i class="fa fa-user-circle" style="color: black"></i>
+                </div>
+                <a href="favourites.html">
+                    <div class="favourite-icon">
+                        <i class="fa fa-heart" style="color: black"></i>
+                    </div>
+                </a>
+                <a href="cart.html">
+                    <div class="cart-icon">
+                        <div class="cart-item-indicator">2</div>
+                        <i class="fa fa-shopping-cart" style="color: black"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="search-container">
+                <div class="search-icon-container">
+                    <i class="fa fa-search"></i>
+                </div>
+                <input type="search" id="searchInput" name="search" class="search-bar" placeholder="Find Promotions..." />
+                <div class="qr-icon-container">
+                    <i class="fa fa-qrcode"></i>
+                </div>
+            </div>
+            <!-- to show search results and suggestions-->
+            <ul class="suggestionsUL"></ul>
+        </div>
+    </header>
+
+    <div class="body-container">
+        <div class="error-alert-banner">
+            <span class="error-message"></span>
+            <i class="fa fa-times-circle"></i>
+        </div>
+        <p class="body-title">Checkout</p>
+        <p class="body-sub-title">Add Order Contact Information</p>
+
+        <div class="order-contact-info-container">
+            <label for="email-input" class="input-text">
+                <input type="email" id="email-input" placeholder="&nbsp;">
+                <span class="placeholder-label">Email</span>
+                <span class="focus-bg"></span>
+            </label>
+
+            <label for="address-input" class="input-text">
+                <input type="text" id="address-input" placeholder="&nbsp;">
+                <span class="placeholder-label">Address</span>
+                <span class="focus-bg"></span>
+            </label>
+
+            <label for="telephone-input" class="input-text">
+                <input type="tel" id="telephone-input" placeholder="&nbsp;">
+                <span class="placeholder-label">Telephone</span>
+                <span class="focus-bg"></span>
+            </label>
+        </div>
+
+        <div class="order-summary-container">
+            <p class="body-sub-title">Order Summary</p>
+
+            <div class="order-total-container">Order Total: Rs.
+                <span class="span_1"></span>
+                <div>
+                <span class="quiz-span">   Quiz Points (Available = <span id="avail_points_span"></span>) : </span>
+                <input id="quiz_points_redeem" type="number" class="input-quantity-points" value="2" pattern="[0-9]">
+
+                </div>
+            </div>
+
+            <div class="order-items-container"></div>
+
+            <div class="checkout-buttons-container">
+                <button class="primary-button-unfilled back-btn">Back To Cart</button>
+                <button class="primary-button-filled pay-btn">Pay</button>
+            </div>
+        </div>
+
+        <div class="success-alert"></div>
+        <div class="error-alert"></div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Description container -->
+            <div class="footer-upper">
+                <div class="footer-column footer-description">
+                    <h6>Best Dealz</h6>
+                    <p class="text-justify">
+                        Best Dealz is the Sri Lanka's largest online destination for home furnishing. We are
+                        committed to delight our customers every step of the way. Best Dealz is reinventing the
+                        way  people shop for their furniture for home from product discovery to final  delivery.
+                    </p>
+                </div>
+
+                <!-- Address and contacts container -->
+                <div class="footer-column footer-contacts">
+                    <h6>Address and Contacts</h6>
+                    <ul class="quick-access-links">
+                        <li>250, 52<sup>nd</sup> Street,</li>
+                        <li>Gotham City,</li>
+                        <li>Sri Lanka.</li>
+                        <li class="contact-info"><i class="fa fa-envelope"></i>&nbsp; best.dealz@gmail.com</li>
+                        <li><i class="fa fa-phone"></i>&nbsp; (011) 333-2244</li>
+                    </ul>
+                </div>
+
+                <!-- Quick access container -->
+                <div class="footer-column footer-links">
+                    <h6>Quick Access Links</h6>
+                    <ul class="quick-access-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">Favourites</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Game</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p class="copyright-section">Copyright &copy; 2021 All Rights Reserved by
+                        <a href="#">Best Dealz</a>
+                    </p>
+                </div>
+
+                <!-- Social links container -->
+                <div class="footer-social">
+                    <ul class="social-links-list">
+                        <li class="facebook"><a href="https://www.facebook.com/"><img class="facebook" src="./assets/images/social-media-icons/facebook-icon.png" alt="Facebook"></a></li>
+                        <li class="twitter"><a href="https://twitter.com/"><img class="twitter" src="./assets/images/social-media-icons/twitter-icon.png" alt="Twitter"></a></li>
+                        <li class="instagram"><a href="https://www.instagram.com/"><img class="instagram" src="./assets/images/social-media-icons/instagram-icon.png" alt="Instagram"></a></li>
+                        <li class="google-plus"><a href="https://myaccount.google.com/"><img class="google-plus" src="./assets/images/social-media-icons/google-plus-icon.png" alt="Google Plus"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Internal scripts -->
+    <script type="application/javascript" src="assets/js/header.js"></script>
+    <script type="application/javascript" src="assets/js/sidemenu.js"></script>
+    <script type="application/javascript" src="assets/js/account_popup.js"></script>
+    <script type="application/javascript" src="assets/js/qr_scanner.js"></script>
+    <script type="application/javascript" src="assets/js/checkout.js"></script>
+    <script type="application/javascript" src="assets/js/alerts.js"></script>
+</body>
+</html>

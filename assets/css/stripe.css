@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body {
+    background-color: #ffffff !important;
+}
+
+.payment-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment-form-header {
+    width: 100%;
+    background: url('../images/checkout-background.png') 40% 50% no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+}
+
+.payment-form-header .logo-container {
+    background: #ffffff;
+    width: 146px;
+    height: 70px;
+    margin-top: 40px;
+    border: 2px solid #cacaca;
+    border-radius: 50%;
+    padding: 45px 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.logo-container img {
+    width: 200px;
+    height: 90px;
+    overflow: hidden;
+    margin-left: -27px;
+    margin-top: -5px;
+}
+
+.payment-form-header h2 {
+    font-family: "Poppins", serif !important;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.payment-form-header h3 {
+    font-family: "Roboto", serif !important;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0;
+    margin: 6px 0 30px;
+}
+
+.payment-form-fields {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field {
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #242424 !important;
+    width: 100%;
+    border: 2px solid rgba(112, 112, 112, 0.6);
+    padding: 6px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row label {
+    color: #242424;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.email-row {
+    margin-bottom: 15px;
+}
+
+.float-row {
+    margin-top: 15px;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+#card-expiration, #card-cvv {
+    width: 100%;
+}
+
+.form-field:focus {
+    outline: 0;
+}
+
+.field-error {
+    border: 2px solid #cc0000;
+}
+
+.payment-loader-parent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
+    display: none;
+}
+
+.payment-loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #7f187f;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 700;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.form-errors {
+    margin-top: 10px;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #cc0000;
+}
+
+.pay-btn {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 400px !important;
+    height: 38px !important;
+    font-family: "Roboto", serif;
+    font-size: 14px !important;
+    font-weight: 600;
+    line-height: 35px !important;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-height : 668px) {
+    .payment-form-fields {
+        margin-top: 35px !important;
+    }
+
+    .payment-form-header {
+        background: url('../images/checkout-background.png') 47% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-height : 376px) {
+    .payment-form-fields {
+        margin-top: 15px !important;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .pay-btn {
+        width: 350px !important;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .payment-form-header {
+        background: url('../images/checkout-background-small.png') -30px no-repeat;
+        background-size: cover;
+    }
+
+    .pay-btn {
+        width: 300px !important;
+    }
+}

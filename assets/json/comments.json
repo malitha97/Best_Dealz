@@ -1,0 +1,201 @@
+{
+  "items": [
+    {
+      "product_id": 1001,
+      "user_id": 1000,
+      "comment_id": 1001,
+      "parent_comment": null,
+      "comment": "This sofa is comfortable and well built"
+    },
+    {
+      "product_id": 1001,
+      "user_id": 1001,
+      "comment_id": 1002,
+      "parent_comment": 1001,
+      "comment": "I totally agree with you"
+    },
+
+
+    {
+      "product_id": 1002,
+      "user_id": 1001,
+      "comment_id": 1003,
+      "parent_comment": null,
+      "comment": "Had a premium feel and elegant to look at"
+    },
+
+
+    {
+      "product_id": 1003,
+      "user_id": 1000,
+      "comment_id": 1004,
+      "parent_comment": null,
+      "comment": "The color is nice and goes with my light grey walls that are warmer toned."
+    },
+    {
+      "product_id": 1003,
+      "user_id": 1001,
+      "comment_id": 1005,
+      "parent_comment": 1004,
+      "comment": "yep, it goes well with warmer background"
+    },
+    {
+      "product_id": 1003,
+      "user_id": 1003,
+      "comment_id": 1006,
+      "parent_comment": null,
+      "comment": "Elegant to look at"
+    },
+
+
+    {
+      "product_id": 1004,
+      "user_id": 1003,
+      "comment_id": 1008,
+      "parent_comment": null,
+      "comment": "The color is nice and goes with my light grey walls that are warmer toned."
+    },
+    {
+      "product_id": 1004,
+      "user_id": 1001,
+      "comment_id": 1009,
+      "parent_comment": 1008,
+      "comment": "The bark color is nice and goes with my lighter toned walls."
+    },
+    {
+      "product_id": 1004,
+      "user_id": 1002,
+      "comment_id": 1010,
+      "parent_comment": 1008,
+      "comment": "color moves well with lighter backgrounds"
+    },
+
+
+    {
+      "product_id": 1005,
+      "user_id": 1004,
+      "comment_id": 1009,
+      "parent_comment": null,
+      "comment": "premium and good quality"
+    },
+
+
+    {
+      "product_id": 1006,
+      "user_id": 1005,
+      "comment_id": 1010,
+      "parent_comment": null,
+      "comment": "The color is nice and goes with my light grey walls that are warmer toned."
+    },
+    {
+      "product_id": 1006,
+      "user_id": 1004,
+      "comment_id": 1011,
+      "parent_comment": 1010,
+      "comment": "The bark color is nice and goes with my lighter toned walls."
+    },
+    {
+      "product_id": 1006,
+      "user_id": 1002,
+      "comment_id": 1012,
+      "parent_comment": null,
+      "comment": "color moves well with lighter backgrounds"
+    },
+
+
+
+    {
+      "product_id": 1007,
+      "user_id": 1003,
+      "comment_id": 1013,
+      "parent_comment": null,
+      "comment": "The color is nice and goes with my light grey walls that are warmer toned."
+    },
+    {
+      "product_id": 1007,
+      "user_id": 1004,
+      "comment_id": 1014,
+      "parent_comment": null,
+      "comment": "The bark color is nice and goes with my lighter toned walls."
+    },
+    {
+      "product_id": 1007,
+      "user_id": 1002,
+      "comment_id": 1015,
+      "parent_comment": 1014,
+      "comment": "color moves well with lighter backgrounds"
+    },
+
+
+    {
+      "product_id": 1008,
+      "user_id": 1004,
+      "comment_id": 1016,
+      "parent_comment": null,
+      "comment": "The rich look it has improves it's value"
+    },
+
+
+    {
+      "product_id": 1009,
+      "user_id": 1001,
+      "comment_id": 1017,
+      "parent_comment": null,
+      "comment": "The rich look it has improves it's value"
+    },
+    {
+      "product_id": 1009,
+      "user_id": 1004,
+      "comment_id": 1018,
+      "parent_comment": 1016,
+      "comment": "comfortable and well built"
+    },
+
+
+    {
+      "product_id": 1010,
+      "user_id": 1003,
+      "comment_id": 1019,
+      "parent_comment": null,
+      "comment": "The color is nice and goes with my light grey walls that are warmer toned."
+    },
+    {
+      "product_id": 1010,
+      "user_id": 1004,
+      "comment_id": 1020,
+      "parent_comment": null,
+      "comment": "The bark color is nice and goes with my lighter toned walls."
+    },
+    {
+      "product_id": 1010,
+      "user_id": 1002,
+      "comment_id": 1021,
+      "parent_comment": 1020,
+      "comment": "color moves well with lighter backgrounds"
+    },
+
+    {
+      "product_id": 1011,
+      "user_id": 1001,
+      "comment_id": 1022,
+      "parent_comment": null,
+      "comment": "The rich look it has improves it's value"
+    },
+    {
+      "product_id": 1011,
+      "user_id": 1004,
+      "comment_id": 1023,
+      "parent_comment": 1022,
+      "comment": "comfortable and well built"
+    },
+
+
+    {
+      "product_id": 1012,
+      "user_id": 1005,
+      "comment_id": 1024,
+      "parent_comment": null,
+      "comment": "comfortable and premium"
+    }
+  ]
+}

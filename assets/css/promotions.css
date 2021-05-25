@@ -1,0 +1,414 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    text-shadow: none;
+}
+
+body {
+    margin: -20px 0 0 0;
+    padding: 0;
+}
+
+.body-container {
+    opacity: 1;
+    padding-top: 35px;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.body-title {
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    color: #281e22;
+    font-size: 30px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.body-sub-title {
+    padding-bottom: 0;
+    margin-top: -5px;
+    color: #8c8989;
+    font-size: 18px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.promotions-items-container {
+    margin: 0 auto;
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 10px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    justify-items: center !important;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /*border: 1px outset blue;*/
+}
+
+.promotions-item-container {
+    /*border: 1px outset blue;*/
+    width: 175px;
+    height: 318px;
+    position: relative;
+    padding: 3px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 20px;
+}
+
+.item-image {
+    position: relative;
+    width: 170px;
+    height: 156px;
+}
+
+.item-image .favourite-btn-container {
+    box-sizing: border-box;
+    width: 22px;
+    height: 23px;
+    position: absolute;
+    display: flex;
+    right: 8px;
+    top: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    font-family: 'FontAwesome', serif;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 2;
+    content: '';
+    color: #7f187f;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.favourited-item {
+    border: 2px solid #7f187f;
+    font-size: 14px !important;
+}
+
+.promotions-item-container a {
+    text-decoration: none;
+}
+
+.promotions-item-container, .promotions-item-container .product-name {
+    font-family: "Poppins", serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #281E22;
+    margin-top: 5px !important;
+    padding-left: 2px;
+}
+
+.promotions-item-container .product-description {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1rem;
+    max-height: 3rem;
+    font-family: "Poppins", serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #646266;
+    margin-top: 10px !important;
+    margin-bottom: 3px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    padding-left: 2px;
+}
+
+.product-rating {
+    display: grid;
+    width: auto;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 0;
+    align-items: center;
+}
+
+.no-of-reviews {
+    margin-left: 1px;
+    font-family: "Roboto", serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #281E22;
+    margin-top: 3px !important;
+    letter-spacing: 1.2px;
+}
+
+.rating-stars i {
+    padding: 0 4px;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 600 !important;
+    color: #f8cf1c;
+}
+
+.promotions-item-container .product-stock-availability {
+    font-family: "Poppins", serif;
+    font-size: 11px;
+    color: #A41313;
+    margin-top: 3px !important;
+    padding-left: 2px;
+}
+
+.product-price {
+    display: grid;
+    width: 170px;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    align-items: center;
+    padding-left: 2px;
+}
+
+.price {
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #281E22;
+    margin-top: 3px !important;
+}
+
+.previous-price {
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #646266;
+    margin-left: 0.5px;
+    margin-top: 3px !important;
+    text-decoration: line-through;
+}
+.question-choices{
+    width: 90%;
+    font-size: 11px;
+    /*border: 1px outset blue;*/
+    box-sizing: border-box;
+    margin-top: 2%;
+    /*padding: 1%;*/
+    /*box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);*/
+}
+.div-shadow{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #7e7a7a;
+}
+.question-container{
+    width: 50%;
+    /*background-color: #fafafa;*/
+    background-color: #fafafa;
+    /*border: 1px outset blue;*/
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    margin-left: 1.5%;
+    border-radius: 3%;
+}
+.select-target-class_1{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    /*background: #2c3e50;*/
+    /*background: #ece8e8;*/
+    background: white;
+    background-image: none;
+}
+
+.select-target-class_1::-ms-expand {
+    display: none;
+}
+/* Custom Select */
+.select_1 {
+    position: relative;
+    display: flex;
+    /*width: 20em;*/
+    width: 100%;
+    /*height: 3em;*/
+    height: 2em;
+    line-height: 2;
+    /*background: #2c3e50;*/
+    /*background: red;*/
+    overflow: hidden;
+    border-radius: .25em;
+    margin-left: 0;
+}
+.select-target-class_1 {
+    flex: 1;
+    padding: 0 .5em;
+    color: black;
+    cursor: pointer;
+}
+/* Arrow */
+.select_1::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    /*background: #34495e;*/
+    background: #D57DEA;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+/* Transition */
+.select_1:hover::after {
+    color: black;
+}
+.sorting_text{
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #281E22;
+    /*box-sizing: border-box;*/
+    /*padding: 1%;*/
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: flex-start;
+}
+
+.inner_container{
+    /*border: 1px outset blue;*/
+}
+
+
+/* Ipad landscape*/
+@media only screen and (device-width: 1024px) {
+    .body-container {
+        padding-top: 0;
+        margin-top: -4px;
+    }
+
+    .promotions-items-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 5px;
+        margin-top: 10px;
+    }
+
+    .promotions-item-container {
+        height: 318px;
+        width: 200px;
+        margin: 10px 0;
+        align-items: flex-start;
+    }
+
+    .item-image {
+        width: 195px;
+        height: 165px;
+    }
+
+    .item-image img {
+        width: 195px;
+        height: 165px;
+    }
+    .question-container{
+        margin-left: 2.3%;
+        width: 225px;
+    }
+}
+
+/* Ipad portrait */
+@media only screen and (device-width: 768px) {
+    .body-container {
+        padding-top: 0;
+        margin-top: -5px;
+    }
+
+    .promotions-items-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+    }
+
+    .promotions-item-container {
+        height: 318px;
+        width: 200px;
+        margin: 20px 0;
+        align-items: flex-start;
+    }
+
+    .promotions-items-container {
+        margin: 10px 40px 0 40px;
+    }
+
+    .item-image {
+        width: 195px;
+        height: 165px;
+    }
+
+    .item-image img {
+        width: 195px;
+        height: 165px;
+    }
+    .question-container{
+        margin-left:6.8%;
+        width: 220px;
+    }
+
+}
+
+/* Iphone landscape*/
+@media only screen and (device-width : 667px) {
+    .body-container {
+        padding-top: 0;
+        margin-top: -5px;
+    }
+
+    .promotions-items-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1px;
+        margin: 10px 0;
+    }
+    .question-container{
+        margin-left: 3.5%;
+        width: 195px;
+    }
+}
+
+/* Iphone portrait */
+@media only screen and (device-width: 375px) {
+    .promotions-items-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3px;
+    }
+
+    .promotions-item-container {
+        height: 318px;
+        width: 175px;
+        margin: 10px 0;
+    }
+
+    .question-container{
+        padding-left: 3px;
+    }
+}

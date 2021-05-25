@@ -1,0 +1,438 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    text-shadow: none;
+}
+
+body {
+    margin: -20px 0 0 0;
+    padding: 0;
+}
+
+.body-container {
+    width: 100%;
+    /*background-color: #fafafa;*/
+
+}
+
+.login-box-1 {
+    margin-top: 94px;
+}
+
+.login-image img{
+    display: block;
+    margin: 0 auto;
+}
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: #7f187f;
+}
+.register-progress {
+    background: rgba(213,125,234,0.8) ;
+    justify-content: flex-start ;
+    border-radius: 200px ;
+    align-items: center ;
+    position: relative ;
+    padding: 0 5px ;
+    display: flex ;
+    height: 15px ;
+    /*width: 50px ;*/
+}
+
+.magnitude-progress {
+    animation: load 3s normal forwards ;
+    box-shadow: 0 10px 40px -10px #fff ;
+    border-radius: 100px ;
+    background: #7f187f ;
+    height: 10px ;
+    /*width: 20% ;*/
+}
+
+@keyframes load {
+    /*   0% { width: 0; } */
+    /*30% { width: 30%; }*/
+    0% { width: 0%; }
+}
+
+.login-fields input {
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+}
+.grid-main-layout {
+    display: grid;
+    grid-template-columns:1fr 10fr 10fr 1fr ;
+    width: 100%;
+    background-color: #fafafa;
+
+}
+.login-box-1{
+    grid-column: 2/3;
+    /*border: 5px outset blue;*/
+}
+.input-text-imp {
+    width: 100%!important;
+
+}
+
+.login-box-2{
+    grid-column: 3/4;
+    background-color: white;
+
+}
+
+.login-form {
+    width: 80%;
+    margin: 0 auto;
+}
+.login-btn {
+    display: block;
+    margin: 5px auto;
+    width: 60% !important;
+    height: 40px !important;
+    line-height: 38px !important;
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    font-size: 14px !important;
+    border: 2px solid #707070 !important;
+}
+
+.sign-up-text {
+    padding-top: 4px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+}
+
+.sub-text{
+    color: #7f187f;
+    font-size: 15px;
+}
+
+.sub-text a {
+    text-decoration: none;
+}
+
+.sub-text a:visited, .sub-text a:active, .sub-text a:link {
+    color: #7f187f;
+}
+
+.next-btn {
+    display: block;
+    margin: 5px auto;
+    width: 60% !important;
+    height: 38px !important;
+    line-height: 35px !important;
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    font-size: 14px !important;
+    border-color: #7F187F !important;
+    color: #7F187F !important;
+}
+.forgot-section{
+    text-align: center;
+}
+.forgot-section .forgot-password{
+    color: #7f187f;
+}
+.sub-text{
+    color: #7f187f;
+}
+
+.error-alert-banner {
+    position: fixed;
+    top: 94px;
+    width: 100%;
+    display: none;
+    grid-template-columns: 10fr 1fr;
+    column-gap: 10px;
+    min-height: 50px;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #cc0000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 500;
+}
+.error-alert-banner span {
+    margin-left: 25px;
+}
+
+.error-alert-banner i {
+    text-align: right;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.main-title{
+    padding-top: 25px;
+    padding-bottom: 0;
+    margin-bottom: -10px;
+    color: #281e22;
+    font-size: 30px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+.body-title {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: -10px;
+    color: #281e22;
+    font-size: 30px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.body-sub-title {
+    padding-bottom: 0;
+    color: #8c8989;
+    font-size: 18px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.favourite-container {
+    min-height: 350px;
+}
+
+.select-all-container {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.select-all-container span {
+    margin-right: 8px;
+}
+
+.select-all-container .select-all-checkbox {
+    width: 0 !important;
+    vertical-align: top;
+    margin-left: 0;
+}
+
+.favourite-items-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 10px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.favourite-item-container {
+    display: grid;
+    height: 160px;
+    grid-template-columns: 3fr 7fr 1fr;
+    position: relative;
+    padding: 2px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 20px;
+}
+
+.favourite-item-container .item-image {
+    width: 170px;
+}
+
+.favourite-item-container .product-name, .favourite-item-container .product-price {
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #281E22;
+    margin-top: 3px !important;
+    padding: 0 3px;
+}
+
+.favourite-item-container .product-description {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1rem;
+    max-height: 3rem;
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #646266;
+    margin-top: 10px !important;
+    margin-bottom: 3px;
+    padding: 0 3px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+}
+
+.favourite-item-container .product-rating i {
+    padding: 0 3px;
+    margin-top: 3px;
+    font-size: 13px;
+    color: #f8cf1c;
+}
+
+.favourite-checkbox {
+    width: 0 !important;
+    vertical-align: top;
+    margin-left: 0;
+    margin-top: -125px !important;
+}
+
+.share-favourites-modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.share-favourite-modal-container {
+    width: 500px;
+    height: 380px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.share-favourite-modal-container .close-modal {
+    position: absolute;
+    top: -5px;
+    right: 8px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.share-favourite-modal-container img {
+    margin-top: 30px;
+}
+
+.share-favourite-modal-container span {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.share-favourite-modal-container input {
+    width: 400px;
+    height: 55px;
+    margin-top: 15px;
+}
+
+.send-email-btn {
+    width: 210px !important;
+    height: 40px !important;
+    line-height: 38px !important;
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    font-size: 14px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (device-width: 1024px) {
+    .login-box-2 {
+        margin-top: -35px;
+    }
+
+    .error-alert-banner {
+        top: 55px;
+    }
+
+    .body-title {
+        padding-top: 0 !important;
+    }
+}
+
+@media only screen and (device-width: 768px) {
+    .login-box-2 {
+        margin-top: -35px;
+    }
+
+    .body-title {
+        padding-top: 0 !important;
+    }
+
+    .error-alert-banner {
+        top: 55px;
+    }
+}
+
+@media only screen and (max-width : 766px) {
+    .grid-main-layout {
+        display: grid;
+        grid-template-columns:1fr 20fr 1fr ;
+        width: 100%;
+        background-color: #fafafa;
+
+    }
+    .login-box-2{
+        grid-column: 2/3;
+        background-color: #fafafa;
+
+    }
+    .login-box-1{
+        display: none;
+
+    }
+}
+
+@media only screen and (device-width: 667px) {
+    .login-box-2 {
+        margin-top: -38px;
+    }
+
+    .body-title {
+        padding-top: 0 !important;
+    }
+
+    .error-alert-banner {
+        top: 55px;
+    }
+}
+
+@media only screen and (device-width : 375px) {
+    .error-alert-banner {
+        top: 94px;
+    }
+}

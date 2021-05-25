@@ -1,0 +1,479 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    text-shadow: none;
+}
+
+body {
+    margin: -20px 0 0 0;
+    padding: 0;
+}
+
+.body-container {
+    width: 100%;
+    margin-top: 92px;
+    background-color: #fafafa;
+}
+
+.body-intro-container {
+    background: url('../images/home-main-image.jpg') 10% 70% no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 325px;
+}
+
+.body-intro-container a, .featured-items-container a, .promotion-item-container a {
+    text-decoration: none !important;
+}
+
+.intro-main-message {
+    padding-top: 45px;
+    padding-bottom: 0;
+    color: #fafafa;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.intro-sub-message {
+    color: #9d9d9d;
+    font-size: 12px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.store-btn-main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px !important;
+    height: 30px !important;
+    line-height: 28px !important;
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    font-size: 12px !important;
+    background: transparent !important;
+    border-color: #d57dea !important;
+    color: #d57dea !important;
+}
+
+.body-promotions-container {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 3fr 2fr;
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    column-gap: 15px;
+}
+
+.promotion-item-container {
+    background: url('../images/promotion-image.png') 10% 65% no-repeat;
+    background-size: cover;
+    min-height: 365px;
+}
+
+.promotion-item-container .promotion-message {
+    padding-top: 125px;
+    color: #ffffff;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.promotion-store-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px !important;
+    height: 30px !important;
+    line-height: 28px !important;
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    font-size: 12px !important;
+}
+
+.featured-item-closeout {
+    position: relative;
+    background-color: #cc252a;
+    height: 225px;
+    overflow: hidden;
+}
+
+.featured-item-closeout .closeout-title {
+    color: #ffffff;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.featured-item-closeout .closeout-description {
+    margin-top: -10px;
+    color: #ffffff;
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.closeout-image {
+    background: url('../images/closeout-image.png') -30px 0 no-repeat;
+    z-index: 10;
+    width: 360px;
+    height: 168px;
+}
+
+.featured-item-discount {
+    margin-top: 15px;
+    position: relative;
+    height: 125px;
+    background-color: #262626;
+}
+
+.featured-item-discount .discount-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../images/discount-image.png');
+    width: 360px;
+    height: 122px;
+}
+
+.top-sellers-container {
+    padding-top: 2px;
+}
+
+.top-sellers-products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-sellers-title {
+    color: #8c8989;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.top-sellers-products-container ul {
+    list-style: none;
+}
+
+.product-container {
+    position: relative;
+    padding: 1px;
+    width: 180px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 20px;
+}
+
+.product-container a {
+    text-decoration: none;
+}
+
+.lSPrev, .lSNext {
+    visibility: hidden;
+}
+
+.lSSlideOuter .lSPager.lSpg > li.active a, .lSSlideOuter .lSPager.lSpg > li:hover a {
+    background-color: #7f187f !important;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+}
+
+.product-image .favourite-btn-container {
+    box-sizing: border-box;
+    width: 22px;
+    height: 23px;
+    position: absolute;
+    display: flex;
+    right: 8px;
+    top: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    font-family: 'FontAwesome', serif;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 50;
+    content: '';
+    color: #7f187f;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.favourited-item {
+    border: 2px solid #7f187f;
+    font-size: 14px !important;
+}
+
+.product-container .product-name, .product-container .product-discounted-price {
+    font-family: "Poppins", serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #281E22;
+    margin-top: 1px !important;
+    padding: 2px 3px;
+}
+
+.product-container .product-discounted-price {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.product-container .product-rating {
+    margin-top: -2px;
+    display: flex;
+    align-items: center;
+}
+
+.product-container .product-rating i {
+    padding: 2px 3px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f8cf1c;
+}
+
+.product-container .product-no-of-review {
+    font-family: "Roboto", serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #281E22;
+    margin-top: 1px !important;
+    padding: 2px 3px;
+}
+
+.product-container .product-price {
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #707070;
+    text-decoration: line-through;
+    margin-top: 1px !important;
+    padding: 2px 3px;
+}
+
+.product-container .product-stock-count {
+    font-family: "Poppins", serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #a41313;
+    margin-top: 1px !important;
+    padding: 2px 3px;
+}
+
+@media only screen and (max-width: 1375px) {
+    .body-intro-container {
+        background: url('../images/home-main-image.jpg') 15% 65% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    .body-intro-container {
+        background: url('../images/home-main-image.jpg') 30% 65% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    .body-intro-container {
+        background: url('../images/home-main-image.jpg') 40% 65% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .body-intro-container {
+        background: url('../images/home-main-image.jpg') 45% 65% no-repeat;
+        background-size: cover;
+    }
+
+    .promotion-item-container {
+        background: url('../images/promotion-image.png') 20% 65% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (device-width: 1024px) {
+    .body-container {
+        margin-top: 55px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .body-intro-container {
+        background: url('../images/home-main-image.jpg') 50% 65% no-repeat;
+        background-size: cover;
+    }
+
+    .promotion-item-container {
+        background: url('../images/promotion-image.png') 30% 65% no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .body-promotions-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: 5px;
+    }
+
+    .featured-items-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 10px;
+        column-gap: 15px;
+    }
+
+    .featured-item-text {
+        float: right;
+        margin-right: 40px !important;
+    }
+
+    .closeout-image {
+        margin-top: 60px;
+        width: 400px;
+        height: 168px;
+        float: left;
+    }
+
+    .closeout-title {
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 805px) {
+    .closeout-image {
+        margin-top: -91px;
+    }
+}
+
+@media only screen and (device-width: 768px) {
+    .body-container {
+        margin-top: 55px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .closeout-image {
+        background: url('../images/closeout-image.png') -50px 0 no-repeat;
+        margin-top: -92px;
+    }
+
+    .featured-item-text {
+        margin-right: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .closeout-image {
+        margin-top: -92px;
+    }
+
+    .featured-item-text {
+        margin-right: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .closeout-image {
+        margin-top: -92px;
+        margin-left: -50px;
+    }
+
+    .featured-item-text {
+        margin-right: 20px !important;
+    }
+}
+
+@media only screen and (device-width: 667px) {
+    .body-container {
+        margin-top: 55px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .clear-fix {
+        float: none;
+        clear: both;
+    }
+
+    .featured-item-text {
+        float: none;
+        margin-top: -80px !important;
+        margin-right: 0 !important;
+    }
+
+    .closeout-image {
+        float: none;
+        background: url('../images/closeout-image.png') 0 0 no-repeat;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .body-promotions-container {
+        padding: 0 !important;
+    }
+
+    .promotion-item-container {
+        background: url('../images/promotion-image-small.png') 55% 65% no-repeat;
+        background-size: cover;
+        width: 100% !important;
+        min-height: 200px;
+    }
+
+    .promotion-item-container .promotion-message {
+        padding-top: 40px;
+    }
+
+    .closeout-image {
+        width: 100% !important;
+    }
+
+    .discount-image {
+        width: 100% !important;
+    }
+}

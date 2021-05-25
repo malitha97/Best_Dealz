@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "id": 1001,
+      "name": "Wide Flared Arm Sofa",
+      "description": "If you were a couple, the extra space on the couch is for someone else or your pet. A beautiful upholstered fabric finish and exposed wood base and legs create a natural finish for your room.",
+      "price": 17500,
+      "discountedPrice": 15000,
+      "rating": 5,
+      "noOfReviews": 2,
+      "shippingCost": 1000,
+      "image": "https://i.ibb.co/HTLw7cn/furniture-img-1.jpg",
+      "url": "products/furniture1.html"
+    },
+    {
+      "id": 1004,
+      "name": "Linen Flared Arm Sofa",
+      "description": "This upholstered sofa, which has a simple, magnificent, and stylish appearance design. It can offer comfortable support, and it is a comfortable partner that inspires your work.",
+      "price": 25000,
+      "discountedPrice": 22500,
+      "rating": 5,
+      "noOfReviews": 3,
+      "shippingCost": 800,
+      "image": "https://i.ibb.co/Sn4tsHV/furniture-img-4.jpg",
+      "url": "products/furniture4.html"
+    },
+    {
+      "id": 1006,
+      "name": "Ulises Loveseat",
+      "description": "Not 1 to be outshone when it comes to both comfort and aesthetics, this mid-century modern 2-seater sofa will most certainly give anybody's current arrangement a run for its money.",
+      "price": 32500,
+      "discountedPrice": 30000,
+      "rating": 5,
+      "noOfReviews": 3,
+      "shippingCost": 900,
+      "image": "https://i.ibb.co/HzkmcyK/furniture-img-6.jpg",
+      "url": "products/furniture6.html"
+    },
+    {
+      "id": 1009,
+      "name": "Liam 76\" Wide Sofa",
+      "description": "Get the perfect blend of contemporary chic and timeless elegance with this upholstered sofa from George Oliver. Designed to fit effortlessly into compact spaces to bring style and comfort to any room in your home.",
+      "price": 24000,
+      "discountedPrice": 21500,
+      "rating": 5,
+      "noOfReviews": 2,
+      "shippingCost": 1200,
+      "image": "https://i.ibb.co/c2WV4bZ/furniture-img-9.jpg",
+      "url": "products/furniture9.html"
+    },
+    {
+      "id": 1010,
+      "name": "Rolled Arm Sofa",
+      "description": "Luxurious leather upholstery highlights this collection. This Leather Loveseat features hardwood construction and brass-colored nail-head trims. The perfect centerpiece for your seating arrangement, it blends contemporary appeal with simple sophistication.",
+      "price": 26500,
+      "discountedPrice": 25000,
+      "rating": 5,
+      "noOfReviews": 3,
+      "shippingCost": 100,
+      "image": "https://i.ibb.co/s5pNdZS/furniture-img-10.jpg",
+      "url": "products/furniture10.html"
+    },
+    {
+      "id": 1011,
+      "name": "Speakman Arm Sofa",
+      "description": "This sofa evokes Hollywood glamour with a modern style and lush velvet upholstery. The silver nailhead trim finish shows it's sophisticated side. this piece will command center stage in a living room or master suite.",
+      "price": 23500,
+      "discountedPrice": 20500,
+      "rating": 5,
+      "noOfReviews": 2,
+      "shippingCost": 1100,
+      "image": "https://i.ibb.co/cJDwNSK/furniture-img-11.jpg",
+      "url": "products/furniture11.html"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+.side-bar-menu-modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 600;
+}
+
+.side-bar-menu-container {
+    width: 300px;
+    height: 667px;
+    display: grid;
+    top: 0;
+    left: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 130px 150px 267px 100px;
+    grid-row-gap: 0;
+    background-color: #262626;
+    overflow: hidden;
+    text-align: center;
+}
+
+.side-menu-cancel {
+    height: 50px;
+}
+
+.side-menu-cancel i{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 24px;
+    color: #8C8989;
+    border-width: 1px;
+    border-color: #95989A;
+}
+
+
+.logo-circle {
+    position: relative;
+    left: 105px;
+    width: 95px;
+    height: 93px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-menu-logo img{
+    width: 63px;
+    height: 35px;
+}
+
+
+.side-menu-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.side-menu-links a {
+    text-decoration: none;
+    color: #8C8989;
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    text-shadow: none;
+}
+
+.side-menu-links a:visited {
+    color: #8C8989;
+}
+
+
+.side-menu-footer {
+    grid-row-start: 5;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #FFF6F6;
+    text-shadow: none;
+}
+
+.side-menu-footer p{
+    font-size: 11px;
+    font-family: "Poppins", serif;
+    color: #8C8989;
+}
+
+.facebook-sidemenu .instagram-sidemenu .twitter-sidemenu .google-plus-sidemenu img{
+    height: 24px;
+    width: 24px;
+}
+
+.social-links-list-sidemenu {
+    list-style: none;
+    flex-direction: row;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.social-links-list-sidemenu li {
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+
+/* Iphone landscape */
+@media only screen and (device-width : 667px) {
+
+    .side-bar-menu-container {
+        height: 375px;
+        overflow: scroll;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 130px 150px 100px 100px;
+    }
+
+}
+
+
+
+
+
+
